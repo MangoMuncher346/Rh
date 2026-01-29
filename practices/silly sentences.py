@@ -1,13 +1,10 @@
 # RH Silly Sentences
 
-silly = input("what are you doing: ").capitalize()
+silly = input("The fluffy toaster: ").capitalize()
 
-print("Really", silly + "?")
+sentenceB = input("danced over" + "?")
 
-sentence = input("well than go do something: ")
+sentence = input("the semlly banana: ")
 
-print("that's great get to it" + "!")
-
-sentence1 = ("Im going to go swimming" + "!")
-print(sentence, sentence1)
+print("Really " + silly + sentence + sentenceB + "? that's great get to it! Im going to go swimming! ")
 
