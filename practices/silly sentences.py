@@ -6,4 +6,8 @@ print("Really", silly + "?")
 
 sentence = input("well than go do something: ")
 
-print("that's great get to it", sentence + "!")
+print("that's great get to it" + "!")
+
+sentence1 = ("Im going to go swimming" + "!")
+print(sentence, sentence1)
+
