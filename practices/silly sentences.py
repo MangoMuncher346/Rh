@@ -1,4 +1,9 @@
 # RH Silly Sentences
 
-sentence = "Israel was on the way to the store"
+silly = input("what are you doing: ").capitalize()
 
+print("Really", silly + "?")
+
+sentence = input("well than go do something: ")
+
+print("that's great get to it", sentence + "!")

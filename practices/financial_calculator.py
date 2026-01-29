@@ -20,4 +20,3 @@ print("Your transportation is $" , transportation, "that is" ,round(transportati
 
 save = round(.1 * income,2)
 print("Your saveings is $", save)
-
