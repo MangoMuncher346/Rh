@@ -1,10 +1,14 @@
 # RH Silly Sentences
 
-silly = input("The fluffy toaster: ").capitalize()
+adj = input("Whats a adjective?").strip()
 
-sentenceB = input("danced over" + "?")
+adj2 = input("Whats a color adjective?").strip()
 
-sentence = input("the semlly banana: ")
+noun = input("Whats a noun?").strip()
 
-print("Really " + silly + sentence + sentenceB + "? that's great get to it! Im going to go swimming! ")
+adj3 = input("whats a thrid adjective?").strip()
 
+noun2 = input("whats a proper noun?")
+
+sentence = "The " + adj + " " + adj2 + " " + noun  + " " + "jumps over the " + adj3 + " " + noun2 +  "." 
+print(sentence)
