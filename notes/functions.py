@@ -4,6 +4,7 @@ def hello():
     print("Hello world!")
 
 def full_name(first, last):
+    hello()
     return f"{first} {last}" 
 
 hello()
@@ -19,3 +20,12 @@ def factoral(number):
     return total
 for num in range(1, 10):
     print(f"The factoral of {num} is {factoral(num)}")
+
+    name = "Ms. LaRose"
+
+    def admin():
+        print(f"{name} is the admin for the lab!")
+        name = "Mrs. Derbidge"
+        print(f"{name} is the admin for the lab!")
+
+    admin()
