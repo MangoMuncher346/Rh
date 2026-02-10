@@ -4,7 +4,7 @@ def hello():
     print("Hello world!")
 
 def full_name(first, last):
-    hello()
+    hello
     return f"{first} {last}" 
 
 hello()
