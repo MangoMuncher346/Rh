@@ -1,76 +1,82 @@
 # RH IM aal project hang man
 import random 
-words = ["mississippi", "word", "computer science", "bump", "trump" , "claps" , "hydrophilic"]
+words = ["mississippi", "word", "computer science", "bump", "trump" , "claps" , "hydrophilic" , "hydrophobic" , "skate" , "glasses" , "vision"]
 word = random.choice(words)
 
-print(word)
+
 wrong_guesses = 0
-guess = input("guess a letter")
-if 
+
+while True:
+    display_words = ""
+    for letter in word:
+    guess = input("Guess a letter: ")
+    if guess not in word: 
+        wrong_guesses += 1
+        print(f"{guess} is not in the word")
 
 
-
-print(f"{guess} is not in the word print a capital o")
-
-if wrong_guesses == 0:
-    print( """
-        ________
-        |        |
-        |        |
-        |
-        |
-        |
-    __________""")
-elif wrong_guesses == 1:
-    print( """
+    if wrong_guesses == 0:
+        print( """
+            ________
+            |        |
+            |        |
+            |
+            |
+            |
+        __________""")
+    elif wrong_guesses == 1:
+        print( """
+            ________
+            |        |
+            |        |
+            |        O
+            |        
+            |       
+        __________""")
+    elif wrong_guesses == 2:
+        print( """
         ________
         |        |
         |        |
         |        O
-        |        
+        |        |
         |       
     __________""")
-elif wrong_guesses == 2:
-    print( """
-      ________
-      |        |
-      |        |
-      |        O
-      |        |
-      |       
- __________""")
-elif wrong_guesses == 3
-print( """
+    elif wrong_guesses == 3:
+        print( """
+        
+        ________
+        |        |
+        |        |
+        |        O
+        |        |
+        |       /
+    __________""")
+    elif wrong_guesses == 4:
+        print( """
+        ________
+        |        |
+        |        |
+        |        O
+        |        |
+        |       / \\
+    __________""")
+    elif wrong_guesses == 5:
+        print( """
+        ________
+        |        |
+        |        |
+        |        O
+        |        |\\
+        |       / \\
+    __________""")
+    elif wrong_guesses == 6:
+        print( """
+        ________
+        |        |
+        |        |
+        |        O
+        |       /|\\
+        |       / \\
+    __________""")
     
-      ________
-      |        |
-      |        |
-      |        O
-      |        |
-      |       /
- __________""")
-print( """
-      ________
-      |        |
-      |        |
-      |        O
-      |        |
-      |       / \\
- __________""")
-print( """
-      ________
-      |        |
-      |        |
-      |        O
-      |        |\\
-      |       / \\
- __________""")
-print( """
-      ________
-      |        |
-      |        |
-      |        O
-      |       /|\\
-      |       / \\
- __________""")
- 
