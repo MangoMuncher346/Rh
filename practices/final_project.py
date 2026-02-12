@@ -3,12 +3,15 @@ import random
 words = ["mississippi", "word", "computer science", "bump", "trump" , "claps" , "hydrophilic" , "hydrophobic" , "skate" , "glasses" , "vision"]
 word = random.choice(words)
 
-
+letters_guessed = []
 wrong_guesses = 0
 
 while True:
     display_words = ""
     for letter in word:
+        if letter in letters_guessed:
+            letter = input("")
+
     guess = input("Guess a letter: ")
     if guess not in word: 
         wrong_guesses += 1
