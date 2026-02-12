@@ -10,7 +10,7 @@ while True:
     display_words = ""
     for letter in word:
         if letter in letters_guessed:
-            letter = input("")
+            display_words += letters_guessed
 
     guess = input("Guess a letter: ")
     if guess not in word: 
