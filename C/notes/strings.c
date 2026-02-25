@@ -8,7 +8,7 @@ int main(){
     char book[50];
     
     printf("whta is your fsvoritr book: ");
-   // scanf("%s", &book);
+    //scanf("%s", &book);
     fgets(book, sizeof(book), stdin);
     printf("Thisis %s at %s, It is awesome!\n", subject, school);
 printf("%s is a cool book!\n", book);
