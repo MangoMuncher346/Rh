@@ -12,3 +12,4 @@ noun2 = input("whats a proper noun?")
 
 sentence = "The " + adj + " " + adj2 + " " + noun  + " " + "jumps over the " + adj3 + " " + noun2 +  "." 
 print(sentence)
+
