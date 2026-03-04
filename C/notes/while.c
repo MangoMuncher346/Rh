@@ -5,7 +5,7 @@
 
 
 int main(){
-    int i = 1;
+  int i = 1;
     while(i <= 10){
         printf("%d\n", i);
         i++; //increases variable i by 1
@@ -40,9 +40,18 @@ printf("GOOSE!");
         }else if (guess < number){
         printf("Guess higher.");
         }else{
-            printf("Guess lower.");
+            printf("Guess lower."); 
         }
 
     }
+
+    // for loops
+
+    for(int i = 20; i > 0; i--){
+        printf("%d ", i);
+    }
+     printf("\n"); // makes ne wline
+
+
     return 0;
 }
