@@ -3,19 +3,49 @@
 
 
 int main(){
-    const float income = 
-     float rent = 
-     float utilities = 
-     float groceries =  
-     float transportation = 
-    
-    
-    
+  float income, rent, utilities, groceries, transportation, savings, remaining;
+
+  printf("What's your monthy income: $");
+ 
+  scanf("%f", &income);
+ 
+  printf("rent: $");
+
+  scanf("%f", rent);
+ 
+  printf("utilities: $");
+ 
+  scanf("%f", &utilities);
+ 
+  printf("Your groceries: $");
+ 
+  scanf("%f", groceries);
+ 
+  printf("transportatio: $");
+ 
+  scanf("%f", &transportation);
+
+  savings = income *0.10;
+  
+  remaining = income-(rent+utilities+groceries+transportation+savings);
    
+  printf("\n---monthly summary---\n");
    
-    printf("your rent is", rent, " %.2f\nrent: %.1f\nincome: %d\n of income");
+    printf("savings(10%%):$ %.2f\n", savings);
+  
+    printf("remaining to apend: $%.2f\n", remaining);
+   
+    printf("\n---percent of income---\n");
+   
+    printf("rent:%.1%%\n", (rent/income)*100);
+   
+    printf("utillites: %.1%%\n", (utilities/income)*100);
+   
+    printf("groceries: %.1%%\n", (groceries/income)*100);
     
-    printf("income: %d\n rent: %d\n utilites: %d\n grpoceries: %d\n transportation: %d\n", rent , utilities, groceries, transportation);
+    printf("transportation: %.1%%\n", (transportation/income)*100);
+    
+    printf("savings: %.1%%\n", (savings/income));
 
 
 
@@ -23,6 +53,5 @@ int main(){
 
 
 
-
-
+    return 0;
 }
