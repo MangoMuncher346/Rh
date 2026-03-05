@@ -19,7 +19,7 @@ int main(){
  
   printf("Your groceries: $");
  
-  scanf("%f", groceries);
+  scanf("%f", &groceries);
  
   printf("transportatio: $");
  
@@ -28,7 +28,7 @@ int main(){
   savings = income *0.10;
   
   remaining = income-(rent+utilities+groceries+transportation+savings);
-   
+
   printf("\n---monthly summary---\n");
    
     printf("savings(10%%):$ %.2f\n", savings);
@@ -37,15 +37,15 @@ int main(){
    
     printf("\n---percent of income---\n");
    
-    printf("rent:%.1%%\n", (rent/income)*100);
+    printf("rent:%.1%\n", (rent/income)*100);
    
-    printf("utillites: %.1%%\n", (utilities/income)*100);
+    printf("utillites: %.1%\n", (utilities/income)*100);
    
-    printf("groceries: %.1%%\n", (groceries/income)*100);
+    printf("groceries: %.1%\n", (groceries/income)*100);
     
-    printf("transportation: %.1%%\n", (transportation/income)*100);
+    printf("transportation: %.1%\n", (transportation/income)*100);
     
-    printf("savings: %.1%%\n", (savings/income));
+    printf("savings: %.1%\n", (savings/income));
 
 
 
