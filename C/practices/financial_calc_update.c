@@ -1,6 +1,9 @@
 // This is a comment
 #include <stdio.h>
-#include <math.h>
+
+
+    
+
 
 int main(){
   float income, rent, utilities, groceries, transportation, savings, remaining;
@@ -50,6 +53,9 @@ int main(){
 
 
 
+
+
+    
 
 
 
