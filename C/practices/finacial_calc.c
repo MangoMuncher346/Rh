@@ -1,6 +1,6 @@
 // This is a comment
 #include <stdio.h>
-
+#include <math.h>
 
 int main(){
   float income, rent, utilities, groceries, transportation, savings, remaining;
@@ -29,13 +29,13 @@ int main(){
   
   remaining = income-(rent+utilities+groceries+transportation+savings);
 
-  printf("\n---monthly summary---\n");
+  printf("\n monthly summary\n");
    
     printf("savings(10%%):$ %.2f\n", savings);
   
     printf("remaining to apend: $%.2f\n", remaining);
    
-    printf("\n---percent of income---\n");
+    printf("\n percent of income\n");
    
     printf("rent:%.1%\n", (rent/income)*100);
    
@@ -46,6 +46,7 @@ int main(){
     printf("transportation: %.1%\n", (transportation/income)*100);
     
     printf("savings: %.1%\n", (savings/income));
+
 
 
 
