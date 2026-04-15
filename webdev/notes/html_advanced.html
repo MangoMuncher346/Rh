@@ -3,9 +3,41 @@
     <head>
         <title>motes about advanced html</title>
         <meta charset="UTF-8"/>
+        <!--embeded style sheets go insode the head tag-->
+        <style>
+            *{
+                background-color:rgb(38, 165, 112)
+            }
+            img{
+                width: 50%;
+            }
+            #unordered{
+                font-family: papyrus;
+            }
+            #ordered{
+                color: teal;
+                background-color: pink;
+            }
+            .odd{
+                background-color:blueviolet;
+                color:crimson;
+            }
+            p{
+                background-color:cadetblue;
+                color: #46bbc5;
+                background-color:wheat;
+                text-align: right;
+            }
+            h1{
+                text-align: center;
+                font-size: 50px;
+                border: 3px solid white;
+            }
+        </style>
     </head>
     <body>
         <h1>html advanced notes</h1>
+        <!--this has inline CSS. . . that is bad syntax!-->
         <div style="background-color: green; height: 100px; width: 100px;
         border: 3px solid green;">
             <p>this is in the div</p>
@@ -13,23 +45,23 @@
         <div id="ordered">
         <p>this is how to make an orderd (numbered) list</p>
         <ol>
-            <li>computer program 1</li>
+            <li class="odd">computer program 1</li>
             <li>computer porgram 2</li>
-            <li>advanced computer program</li>
+            <li class="odd">advanced computer program</li>
         </ol>
         </div>
-        <div id="unordered" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+        <div id="unordered">
         <p> this is how you make an unorderd (bulleted) list</p>
         <ul style="list-style-type: circle;">
-            <li>apple</li>
+            <li class="odd">apple</li>
             <li>orange</li>
-            <li>banana</li>
+            <li class="odd">banana</li>
             <li>peach</li>
         </ul>
         <a href="https://docs.google.com/document/d/1AbM2AtUDGilx8k3y8cJZtbDMEr9HRitBnKeIAdMrszM/edit?tab=t.0" target="_blank">W3Schools Unordered List Page</a>
         </div>
         <img src="https://img.freepik.com/free-psd/grey-boulder-rock-isolated-transparent-background_632498-25568.jpg?semt=ais_hybrid&w=740&q=80" 
-        alt="rock" height="200px"/>
+        alt="rock" />
 
     </body>
 
